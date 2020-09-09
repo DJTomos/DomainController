@@ -311,19 +311,7 @@
                         "managedDisk": {
                             "storageAccountType": "StandardSSD_LRS"
                         }
-                    },
-                    "dataDisks": [
-                        {
-                            "name": "[concat(parameters('virtualMachineName'), '_DataDisk')]",
-                            "caching": "ReadWrite",
-                            "createOption": "Empty",
-                            "diskSizeGB": 20,
-                            "managedDisk": {
-                                "storageAccountType": "StandardSSD_LRS"
-                            },
-                            "lun": 0
-                        }
-                    ]
+                    }                    
                 },
                 "networkProfile": {
                     "networkInterfaces": [
